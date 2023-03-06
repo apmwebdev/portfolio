@@ -1,14 +1,18 @@
 {
   "name": "portfolio",
+  "homepage": "https://apmwebdev.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "sass": "^1.58.3",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
