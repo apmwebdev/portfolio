@@ -1,0 +1,98 @@
+$export-bg: #f9f5f5;
+$export-text: #8c5f64;
+$export-accent1-light: #3b6681;
+
+$main-hue: 0;
+$accent-hue: $main-hue + 15;
+//Soft colors
+$soft-bg: hsl(0, 25%, 97%); // #F9F5F5
+$bg2: hsl(0, 15%, 93%);
+//$soft-text: hsl(353, 19%, 46%); // Original (66% L instead of 46%): #B9989C
+$soft-text: hsl($main-hue, 10%, 36%); // Original (66% L instead of 46%): #B9989C
+$soft-main-accent: hsl($main-hue, 10%, 79%); // rgb(217,199,201) -> hsl(353, 19%, 82%)
+$soft-text-light: hsl($main-hue, 15%, 49%); // rgb(217,199,201) -> hsl(353, 19%, 82%)
+$soft-text-dark: hsl($main-hue, 29%, 25%); // #414141
+$soft-accent1-lighter: hsl($accent-hue, 47%, 47%); // #25B7B8 -> hsl(180, 67%, 43%)
+$soft-accent1-light: hsl(203, 37%, 37%);
+//$soft-accent1-dark: hsl($accent-hue, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
+$soft-accent1-dark: hsl($accent-hue, 67%, 42%); // #25B7B8 -> hsl(180, 67%, 43%)
+$soft-accent2: hsl(291, 45%, 70%); // #CA8FD5
+//$contrast-accent: hsl(216, 100%, 15%);
+$contrast-accent: #2a0c4e;
+
+@mixin negative_color {
+  background-color: $soft-text;
+  color: $soft-bg;
+}
+
+:root {
+  color-scheme: light dark;
+  color: $soft-text;
+  background-color: $bg2;
+}
+
+a {
+  color: $soft-accent1-dark;
+  //border-bottom: 2px solid transparent;
+}
+
+a:hover {
+  //color: $d-a-hov;
+  //border-bottom: 2px solid $soft-accent1-dark;
+}
+
+button {
+  background-color: $soft-accent1-dark;
+  font-weight: bold;
+}
+
+button:hover {
+  //border-color: $d-button-border-hov;
+}
+
+header {
+  background-color: $bg2;
+  border-bottom: 2px solid $soft-main-accent;
+}
+
+aside {
+  //border-right: 2px solid $soft-main-accent;
+}
+
+main {
+  //border-left: 2px solid $soft-main-accent;
+  //border-top: 2px solid $soft-main-accent;
+  //border-top-left-radius: 24px;
+}
+
+.hero {
+  //color: $soft-text-light;
+  .opening {
+    //@include negative_color;
+    //border-bottom: 2px solid $soft-text;
+  }
+  .headline {
+    color: $soft-text;
+  }
+  .subtitle {
+    color: $soft-text-light;
+  }
+}
+
+.icon-button {
+  //color: $soft-accent1-light;
+  color: $soft-bg;
+  background-color: $soft-accent1-dark;
+  //background-color: $soft-text-light;
+  //background-color: $contrast-accent;
+  //border-color: $soft-accent1-light;
+}
+
+.popout {
+  @include negative_color;
+}
+
+.tricard h3 {
+  //color: colors.$soft-text-light;
+  border-bottom: 2px solid $soft-text-light;
+}
