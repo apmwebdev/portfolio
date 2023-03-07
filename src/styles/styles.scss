@@ -151,15 +151,47 @@ aside {
 
 .tricard {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
   //justify-content: stretch;
-  row-gap: 32px;
+  gap: 32px;
 }
 
 .card {
   display: grid;
-  justify-content: center;
-  //border-radius: 8px;
-  //border: 2px solid colors.$soft-main-accent;
+  align-content: flex-start;
+  grid-template-rows: min-content 1fr min-content;
+  //justify-items: center;
+  border-radius: 8px;
+  border: 2px solid colors.$soft-main-accent;
+  padding: 16px;
   //text-align: center;
+  h3 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .tags {
+    //align-self: flex-end;
+    font-size: 18px;
+    margin: 8px 0 0;
+    //line-height: 1.7;
+  }
+  span {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin: 8px 8px 0 0;
+  }
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  .icon-button-container {
+    border-radius: 8px;
+    flex-basis: 50%;
+    //flex-grow: 1;
+    padding: 4px 8px;
+  }
 }

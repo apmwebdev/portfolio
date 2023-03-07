@@ -13,12 +13,10 @@ $soft-main-accent: hsl($main-hue, 10%, 79%); // rgb(217,199,201) -> hsl(353, 19%
 $soft-text-light: hsl($main-hue, 15%, 49%); // rgb(217,199,201) -> hsl(353, 19%, 82%)
 $soft-text-dark: hsl($main-hue, 29%, 25%); // #414141
 $soft-accent1-lighter: hsl($accent-hue, 47%, 47%); // #25B7B8 -> hsl(180, 67%, 43%)
-$soft-accent1-light: hsl(203, 37%, 37%);
-//$soft-accent1-dark: hsl($accent-hue, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
 $soft-accent1-dark: hsl($accent-hue, 67%, 42%); // #25B7B8 -> hsl(180, 67%, 43%)
 $soft-accent2: hsl(291, 45%, 70%); // #CA8FD5
-//$contrast-accent: hsl(216, 100%, 15%);
-$contrast-accent: #2a0c4e;
+$soft-accent2-light: hsl(203, 37%, 37%);
+$soft-accent2-dark: hsl(203, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
 
 @mixin negative_color {
   background-color: $soft-text;
@@ -98,5 +96,16 @@ main {
 
 .tricard h3 {
   //color: colors.$soft-text-light;
-  border-bottom: 2px solid $soft-text-light;
+  //border-bottom: 2px solid $soft-text-light;
+}
+
+.card {
+  .icon-button-container {
+    background-color: $soft-accent1-dark;
+    color: $soft-bg;
+  }
+  .tags span {
+    color: $soft-bg;
+    background-color: $soft-accent2-dark;
+  }
 }
