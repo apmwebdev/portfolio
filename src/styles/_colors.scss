@@ -53,6 +53,10 @@ button:hover {
 header {
   background-color: $bg2;
   border-bottom: 2px solid $soft-main-accent;
+
+  .left {
+    border: 2px solid $soft-accent1-dark;
+  }
 }
 
 aside {
