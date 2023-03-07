@@ -7,24 +7,30 @@
     
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <title>Austin Miller</title>
-    <link rel="stylesheet" href="/portfolio/assets/index-34576384.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-024806a0.css">
   </head>
   <body>
     <header>
       <div class="left">
-        <div><a href="#top">AM</a></div>
+        <a href="#">AM</a>
       </div>
       <nav>
-        <a><iconify-icon icon="mdi:about"></iconify-icon> About</a>
-        <a><iconify-icon icon="mdi:art"></iconify-icon> Work</a>
-        <a><iconify-icon icon="mdi:email"></iconify-icon> Contact</a>
-        <a><iconify-icon icon="mdi:paper"></iconify-icon> Resumé</a>
+        <a href="#about"><iconify-icon icon="mdi:about"></iconify-icon> About</a>
+        <a href="#work"><iconify-icon icon="mdi:art"></iconify-icon> Work</a>
+        <a href="#contact"><iconify-icon icon="mdi:email"></iconify-icon> Contact</a>
+        <a href="#resume"><iconify-icon icon="mdi:paper"></iconify-icon> Resumé</a>
       </nav>
     </header>
     <aside>
-      <a><div class="icon-button"><iconify-icon icon="uil:github-alt"></iconify-icon></div></a>
-      <div class="icon-button"><iconify-icon icon="ri:linkedin-fill"></iconify-icon></div>
-      <div class="icon-button"><iconify-icon icon="mdi:email-outline"></iconify-icon></div>
+      <a class="icon-button" href="https://github.com/apmwebdev/" target="_blank">
+        <iconify-icon icon="uil:github-alt"></iconify-icon>
+      </a>
+      <a class="icon-button" href="https://www.linkedin.com/in/austin-miller-5432bb39/" target="_blank">
+        <iconify-icon icon="ri:linkedin-fill"></iconify-icon>
+      </a>
+<!--      <a class="icon-button" href="mailto:a@a.a" target="_blank">-->
+<!--        <iconify-icon icon="mdi:email-outline"></iconify-icon>-->
+<!--      </a>-->
     </aside>
     <main>
       <div class="container">
@@ -36,35 +42,109 @@
           <div class="call-to-action"><button>Say hello</button></div>
 <!--          <p class="blurb">I'm a full stack engineer with a love for intuitive UI and code.</p>-->
         </div>
-        <div>
-<!--          <p>Id cursus metus aliquam eleifend mi in nulla posuere. Adipiscing diam donec adipiscing tristique risus. Laoreet id donec ultrices tincidunt arcu non sodales neque sodales. Eu non diam phasellus vestibulum lorem. Est velit egestas dui id. Enim sed faucibus turpis in eu mi. Dictum sit amet justo donec enim. Et egestas quis ipsum suspendisse ultrices. Nisl condimentum id venenatis a condimentum vitae sapien pellentesque habitant. Velit laoreet id donec ultrices tincidunt arcu non sodales. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Risus quis varius quam quisque id diam. Integer eget aliquet nibh praesent tristique magna sit amet. Amet cursus sit amet dictum sit amet. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit.</p>-->
-        </div>
-        <div class="popout">
-          <h3>About Me</h3>
+        <section id="about" class="popout">
+          <h2 class="section-heading">About Me</h2>
           <div class="id-card">
             <img class="id-pic" src="/portfolio/assets/me-dffa7022.png" alt="Me">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur. Dictumst quisque sagittis purus sit amet. Elementum curabitur vitae nunc sed velit. Ridiculus mus mauris vitae ultricies leo integer malesuada. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Vitae ultricies leo integer malesuada. Elementum eu facilisis sed odio morbi quis. Morbi tristique senectus et netus et. Odio ut sem nulla pharetra diam sit amet nisl suscipit. Odio ut sem nulla pharetra. Odio eu feugiat pretium nibh.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu dictum varius duis at consectetur. Dictumst quisque sagittis purus sit amet. Elementum curabitur vitae nunc sed velit. Ridiculus mus mauris vitae ultricies leo integer malesuada. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim.</p>
           </div>
-        </div>
-        <h2 class="section-heading">Stuff & Things</h2>
-        <div class="tricard">
-          <div class="card">
-            <div class="icon-button-container"><div class="icon-button"><iconify-icon icon="uil:github-alt"></iconify-icon></div></div>
-            <h3>Stuff</h3>
+        </section>
+        <section id="work">
+          <h2 class="section-heading">Work</h2>
+          <div class="tricard">
+            <div class="card">
+              <h3>Chess</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/odin-ruby-chess/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                </div>
+                <p>A command line chess program, fully tested with RSpec.</p>
+              </div>
+              <div class="tags"><span>Ruby</span></div>
+            </div>
+            <div class="card">
+              <h3>Facebook Clone</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/odin-rails-facebook/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                </div>
+                <p>A Facebook clone written in Rails.</p>
+              </div>
+              <div class="tags">
+                <span>Ruby on Rails</span><span>PSQL</span>
+              </div>
+            </div>
+            <div class="card">
+              <h3>Memory Card</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/odin-react-memory-card/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                  <a class="icon-button-container" href="https://apmwebdev.github.io/odin-react-memory-card/" target="_blank">
+                    <iconify-icon icon="mdi:external-link"></iconify-icon>
+                  </a>
+                </div>
+                A simple memory game with constantly shifting cards. Written in TypeScript + React using Vite.
+              </div>
+              <div class="tags"><span>TypeScript</span><span>React</span><span>CSS</span><span>Vite</span></div>
+            </div>
+            <div class="card">
+              <h3>CV Builder</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/odin-react-cv-project/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                  <a class="icon-button-container" href="https://apmwebdev.github.io/odin-react-cv-project/" target="_blank">
+                    <iconify-icon icon="mdi:external-link"></iconify-icon>
+                  </a>
+                </div>
+                <p>A front end-only CV/resumé builder app utilizing React and Gravatar.</p>
+              </div>
+              <div class="tags"><span>React</span><span>CSS</span></div>
+            </div>
+            <div class="card">
+              <h3>Portfolio</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/portfolio/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                </div>
+                <p>This site. Written in HTML and SCSS using Vite as a build tool.</p>
+              </div>
+              <div class="tags"><span>HTML</span><span>Sass</span><span>Vite</span></div>
+            </div>
+            <div class="card">
+              <h3>Calculator</h3>
+              <div>
+                <div class="card-buttons">
+                  <a class="icon-button-container" href="https://github.com/apmwebdev/odin-calculator/" target="_blank">
+                    <iconify-icon icon="mdi:github"></iconify-icon>
+                  </a>
+                  <a class="icon-button-container" href="https://apmwebdev.github.io/odin-calculator/" target="_blank">
+                    <iconify-icon icon="mdi:external-link"></iconify-icon>
+                  </a>
+                </div>
+                <p>A simple calculator web app written in vanilla JS.</p>
+              </div>
+              <div class="tags"><span>JavaScript</span><span>CSS</span></div>
+            </div>
           </div>
-          <div class="card">
-            <div class="icon-button-container"><div class="icon-button"><iconify-icon icon="uil:github-alt"></iconify-icon></div></div>
-            <h3>Things</h3>
-          </div>
-          <div class="card">
-            <div class="icon-button-container"><div class="icon-button"><iconify-icon icon="uil:github-alt"></iconify-icon></div></div>
-            <h3>Blah</h3>
-          </div>
-          <div class="card">
-            <div class="icon-button-container"><div class="icon-button"><iconify-icon icon="uil:github-alt"></iconify-icon></div></div>
-            <h3>Foo</h3>
-          </div>
-        </div>
+        </section>
+        <section id="contact">
+          <h2 class="section-heading">Contact Me</h2>
+          <form action="">this is a form</form>
+        </section>
+        <section id="resume">
+          <h2 class="section-heading">Resumé</h2>
+          <a href="">Download as PDF</a>
+        </section>
       </div>
     </main>
 <!--    <footer>Footer</footer>-->
