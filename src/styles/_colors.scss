@@ -4,6 +4,7 @@ $export-accent1-light: #3b6681;
 
 $main-hue: 0;
 $accent-hue: $main-hue + 15;
+//$accent-hue2: $main-hue + 150;
 //Soft colors
 $soft-bg: hsl(0, 25%, 97%); // #F9F5F5
 $bg2: hsl(0, 15%, 93%);
@@ -15,8 +16,8 @@ $soft-text-dark: hsl($main-hue, 29%, 25%); // #414141
 $soft-accent1-lighter: hsl($accent-hue, 47%, 47%); // #25B7B8 -> hsl(180, 67%, 43%)
 $soft-accent1-dark: hsl($accent-hue, 67%, 42%); // #25B7B8 -> hsl(180, 67%, 43%)
 $soft-accent2: hsl(291, 45%, 70%); // #CA8FD5
-$soft-accent2-light: hsl(203, 37%, 37%);
-$soft-accent2-dark: hsl(203, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
+//$soft-accent2-light: hsl($accent-hue2, 17%, 87%); // hsl(203, 37%, 77%);
+//$soft-accent2-dark: hsl($accent-hue2, 47%, 32%); // hsl(203, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
 
 @mixin negative_color {
   background-color: $soft-text;
@@ -74,12 +75,17 @@ header {
 }
 
 .card {
+  border: 3px solid $soft-main-accent;
   .icon-button-container {
     background-color: $soft-accent1-dark;
     color: $soft-bg;
   }
   .tags span {
-    color: $soft-bg;
-    background-color: $soft-accent2-dark;
+    $accent-hue2: $main-hue + 210;
+    $soft-accent2-light: hsl($accent-hue2, 7%, 87%); // hsl(203, 37%, 77%);
+    $soft-accent2-dark: hsl($accent-hue2, 27%, 27%); // hsl(203, 67%, 32%); // #25B7B8 -> hsl(180, 67%, 43%)
+    color: $soft-accent2-dark;
+    background-color: $soft-accent2-light;
+    border: 2px solid hsl($accent-hue2, 7%, 82%);
   }
 }
