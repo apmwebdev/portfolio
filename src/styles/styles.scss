@@ -164,10 +164,10 @@ aside {
   border-radius: 8px;
   border: 2px solid colors.$soft-main-accent;
   padding: 16px;
-  //text-align: center;
+  font-size: 20px;
   h3 {
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   .tags {
     //align-self: flex-end;
@@ -177,7 +177,7 @@ aside {
   }
   span {
     display: inline-block;
-    padding: 8px 16px;
+    padding: 6px 12px;
     border-radius: 8px;
     margin: 8px 8px 0 0;
   }
@@ -188,6 +188,7 @@ aside {
   justify-content: center;
   gap: 8px;
   margin-bottom: 16px;
+  font-size: 24px;
   .icon-button-container {
     border-radius: 8px;
     flex-basis: 50%;

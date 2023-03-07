@@ -44,10 +44,6 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  //border-color: $d-button-border-hov;
-}
-
 header {
   background-color: $bg2;
   border-bottom: 2px solid $soft-main-accent;
@@ -57,21 +53,8 @@ header {
   }
 }
 
-aside {
-  //border-right: 2px solid $soft-main-accent;
-}
-
-main {
-  //border-left: 2px solid $soft-main-accent;
-  //border-top: 2px solid $soft-main-accent;
-  //border-top-left-radius: 24px;
-}
-
 .hero {
-  //color: $soft-text-light;
   .opening {
-    //@include negative_color;
-    //border-bottom: 2px solid $soft-text;
   }
   .headline {
     color: $soft-text;
@@ -82,21 +65,12 @@ main {
 }
 
 .icon-button {
-  //color: $soft-accent1-light;
   color: $soft-bg;
   background-color: $soft-accent1-dark;
-  //background-color: $soft-text-light;
-  //background-color: $contrast-accent;
-  //border-color: $soft-accent1-light;
 }
 
 .popout {
   @include negative_color;
-}
-
-.tricard h3 {
-  //color: colors.$soft-text-light;
-  //border-bottom: 2px solid $soft-text-light;
 }
 
 .card {
